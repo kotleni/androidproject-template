@@ -5,12 +5,12 @@ plugins {
 }
 
 object AppConfig {
-    val packageName = "kotleni.androidtemplate"
-    val versionCode = 1
-    val versionName = "1.0"
-    val minSdk = 23
-    val targetSdk = 33
-    val compileSdk = 33
+    const val packageName = "kotleni.androidtemplate"
+    const val versionCode = 1
+    const val versionName = "1.0"
+    const val minSdk = 23
+    const val targetSdk = 33
+    const val compileSdk = 33
 }
 
 android {
@@ -41,7 +41,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 
     buildFeatures {
